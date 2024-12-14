@@ -16,7 +16,7 @@ document.getElementById("menu-toggle").addEventListener("click", function() {
 //         updateItems();
 //     });
 //     prevButton.addEventListener('click', () => {
-//         index = (currentIndex - 1 + items.length) % items.length;
+//         index = (index - 1 + items.length) % items.length;
 //         updateItems();
 //     });
 //     updateItems();
