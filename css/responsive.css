@@ -34,7 +34,6 @@
     /*banner */
     #banner {
         grid-template-columns: 1fr;
-       
         margin-top: 4rem;
         .text-content {
             display: flex;
@@ -305,8 +304,8 @@
     .extra {
         display: none;
     }
-    .trending-item .trending-card:not(:first-child) {
+    /* .trending-item .trending-card:not(:first-child) {
         display: none; 
-      }
+      } */
 }
 }
