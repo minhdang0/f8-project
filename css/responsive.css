@@ -307,5 +307,104 @@
     /* .trending-item .trending-card:not(:first-child) {
         display: none; 
       } */
+      #banner {
+        grid-template-columns: 1fr;
+        margin-top: 4rem;
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                max-width: 576px;
+            }
+            p {
+                max-width: 335px;
+            }
+            .more-info {
+                justify-content: space-between;
+            }
+        }
+        .img-content {
+            margin-top: 4rem;
+        }
+        .extra {
+            display: none;
+        }
+    }
+
+    /*Search bar*/
+    #search-bar {
+        .search-form {
+            flex-direction: column;
+            align-items: first baseline;
+        } 
+    }
+    /*Feature tour*/
+    #feature-tour {
+       margin-top: 26rem;
+       .title-feature {
+            flex-direction: column;
+            align-items: first baseline;
+            button {
+                margin-top: 3rem;
+            }
+       }
+       .tour-card {
+        justify-content: center;
+        .tour-item{
+            flex: 1 1 100%;
+            height: auto;
+        }
+       }
+    }
+    #about-us {
+        margin-top: 4rem;
+        .about-us__image {
+            display: none;
+        }
+    }
+    #trending-tour {
+        .title {
+            flex-direction: column;
+            align-items: first baseline;
+            .forward {
+                margin-top: 3rem;
+            }
+        }
+        .trending-card {
+            justify-content: center;
+        }
+        
+    }
+    /* #destination {
+        .title {
+            flex-direction: column;
+            align-items: first baseline;
+            button {
+                margin-top: 4rem;
+            }
+        }
+        .destination-image {
+            grid-template-columns: 1fr;
+            
+        }
+    } */
+    .tuor-type__item {
+        align-items: center;
+        justify-content: center;
+        gap:3rem;
+    }
+    #cta{
+        flex-direction: column;
+        gap: 24px;
+    }
+    #art-travel {
+        margin-top: 40rem;
+        flex-direction: column;
+        gap:40px;
+        .art-title::before {
+            left: 38%;
+        }
+    }
 }
 }
