@@ -469,12 +469,11 @@
         grid-template-rows: auto;
         gap: 30px;
         .first-destination {
-            width: 472px;
-            height: 526px;
+            /* width: 472px;
+            height: 526px; */
             display: grid;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
-            flex-basis: 668px;
             gap:30px;
             .photo-1 {
                 grid-row: span 1;
