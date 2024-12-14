@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/tour.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+  <body>
+    <div class="container">
+      <!-- Begin Header -->
+      <header class="d-flex-between">
+        <a href="#"
+          ><img src="../assets/img/logo.png" alt="Safe Tour Logo" />
+        </a>
+        <nav>
+          <ul class="nav__inner d-flex-between">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="./destinations.html">Destinations</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-header">Contact us</button>
+      </header>
+      <!-- End header -->
+
+      <!-- Begin banner -->
+      <section id="banner">
+        <h1>Tour</h1>
+      </section>
+      <!-- End banner -->
+
+       <!-- Bengin search bar -->
+       <section class="search-bar d-flex-center" id="search-bar">
+        <form class="search-form" action="/search" method="GET">
+          <!-- Location -->
+          <div class="form-group">
+            <label for="location">Location</label>
+            <select id="location" name="location">
+              <option value="bali">Bali, Indonesia</option>
+              <option value="jakarta">Jakarta, Indonesia</option>
+            </select>
+          </div>
+
+          <!-- City -->
+          <div class="form-group">
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="prambanan">Prambanan</option>
+              <option value="yogyakarta">Yogyakarta</option>
+            </select>
+          </div>
+
+          <!-- Guests -->
+          <div class="form-group">
+            <label for="guests">Guest</label>
+            <select id="guests" name="guests">
+              <option value="1">1 Person</option>
+              <option value="2">2 Persons</option>
+              <option value="8">8 Persons</option>
+            </select>
+          </div>
+
+          <!-- Search Button -->
+          <button class="search-button" id="search-button">
+            <i class="ri-search-line"></i>Search
+          </button>
+        </form>
+      </section>
+      
+      <!-- End search bar -->
+
+      <!-- Begin tour -->
+       <section class="tour-card row col-2" id="tour-card">
+
+        <div class="tour-item">
+            <img src="../assets/img/tour/indonesia.png" alt="Indonesia">
+            <div class="tour-info">
+                <h2>Indonesia</h2>
+                <div class="price-day">
+                    <span class="day">9 days</span>
+                    <span class="price">$6,500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-item">
+            <img src="../assets/img/tour/thailand.png" alt="Thailand">
+            <div class="tour-info">
+                <h2>Thailand</h2>
+                <div class="price-day">
+                    <span class="day">9 days</span>
+                    <span class="price">$6,500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-item">
+            <img src="../assets/img/tour/dubai.png" alt="Dubai">
+            <div class="tour-info">
+                <h2>Dubai</h2>
+                <div class="price-day">
+                    <span class="day">9 days</span>
+                    <span class="price">$6,500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-item">
+            <img src="../assets/img/tour/maldives.png" alt="Maldives">
+            <div class="tour-info">
+                <h2>Maldives</h2>
+                <div class="price-day">
+                    <span class="day">9 days</span>
+                    <span class="price">$6,500</span>
+                </div>
+            </div>
+        </div>
+        <div class="tour-item">
+            <img src="../assets/img/tour/city-dubai.png" alt="Dubai city">
+            <div class="tour-info">
+                <h2>Dubai</h2>
+                <div class="price-day">
+                    <span class="day">9 days</span>
+                    <span class="price">$6,500</span>
+                </div>
+            </div>
+        </div>
+        <div class="tour-item">
+            <img src="../assets/img/tour/bangladesh.png" alt="Bangladesh">
+            <div class="tour-info">
+                <h2>Bangladesh</h2>
+                <div class="price-day">
+                    <span class="day">9 days</span>
+                    <span class="price">$6,500</span>
+                </div>
+            </div>
+        </div>
+       </section>
+       <!-- End tour -->
+      <!--Begin footer-->
+      <footer>
+        <div class="footer__top">
+          <div class="footer__item">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Guide Book</a></li>
+              <li><a href="#">App Directory</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h5>Travellers</h5>
+            <ul>
+              <li><a href="#">Why Travellers</a></li>
+              <li><a href="#">Enterprice</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Instagram post</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">Travelling</a></li>
+              <li><a href="#">About Locato</a></li>
+              <li><a href="#">Success</a></li>
+              <li><a href="#">Information</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h5>Get in Touch</h5>
+            <p>Feel free to get in touch with us vai email</p>
+            <a class="mailto" href="maito:email@gmail.com">email@gmail.com</a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_bottom d-flex-between">
+          <a href="#" class="logo-bottom"
+            ><img src="../assets/img/blog/logo.png" alt=""
+          /></a>
+          <nav class="nav-bottom">
+            <ul class="nav__inner d-flex-between">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pages</a></li>
+            </ul>
+          </nav>
+          <div class="socials">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

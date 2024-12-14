@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+	color: unset;
+}
+
+.container {
+	width: 1170px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.d-flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.d-flex-start {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.d-flex-column
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.btn {
+    font-weight: 500;
+	font-family: "Poppins", serif;
+	color: #fff;
+	border-radius: 8px;
+	transition: all ease-in-out 0.3s;
+	cursor: pointer;
+	border: none;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.btn-header {
+	font-size: 14px;
+	padding: 16px 28px;
+	background-color: #31c3e0;
+}
+
+.btn-medium {
+	font-size: 16px;
+	padding: 14px 20px;
+	background-color: #ff7b29;
+}
+
+.btn-big {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 191px;
+	height: 66px;
+	padding: 24px 32px;
+	border-radius: 12px;
+	background-color: #ff7b29;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Poppins", serif;
+	box-shadow: 0px 30px 30px -18px rgba(229, 89, 54, 0.16);
+	letter-spacing: -0.01em;
+}
+.circle-btn {
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	border: none; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: #fff;
+	font-size: 25px;
+}
+  
+ 
+header {
+    padding: 32px 0px;
+    .nav__inner {
+        gap:33px;
+        a {
+			padding: 12px 0;
+			color: #676a6c;
+			font-size: 14px;
+			font-weight: 500;
+			transition: all ease-in-out 0.3s;
+			position: relative;
+			&:hover {
+				color: #2d3134;
+                font-weight: 700;
+			}
+			&::after {
+				width: 0;
+				transition: width ease-in-out 0.3s;
+				content: "";
+				position: absolute;
+				bottom: 2px;
+				left: 0;
+				height: 4px;
+				background-color: #ff7b29;
+				border-radius: 99px;
+			}
+			&:hover::after {
+				width: 30%;
+			}
+			
+		}
+    }
+}
+h1 {
+	font-weight: 700;
+	font-size: 6.2rem;
+	line-height: #2d3134;
+	margin-bottom: 20px;
+}
+h2 {
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 50px;
+	color: #2d3134;
+	margin-bottom: 16px;
+}
+
+p {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	line-height: 26px;
+	color: #676a6c;
+}
+.title {
+	margin-bottom: 40px;
+}
+
+/* footer */
+
+.footer__top {
+	margin-top: 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 40px;
+	margin-bottom: 40px;
+
+	h5 {
+		color: #020000;
+		font-weight: 600;
+		margin-bottom: 24px;
+	}
+
+	a {
+		font-size: 12px;
+		font-weight: 400;
+		color: #676a6c;
+		line-height: 38px;
+	}
+
+	p {
+		font-size: 12px;
+		font-weight: 400;
+		color: #676a6c;
+		padding: 22px 0 40px;
+	}
+
+	.mailto {
+		color: #31c3e0;
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+
+.footer_bottom {
+	margin-top: 40px;
+	padding-bottom: 35px;
+	.nav__inner {
+		gap: 34px;
+		a {
+			padding: 12px 0;
+			color: #676a6c;
+			font-size: 14px;
+			font-weight: 500;
+			transition: all ease-in-out 0.3s;
+			position: relative;
+			&:hover {
+				color: #2d3134;
+			}
+			&::after {
+				width: 0;
+				transition: width ease-in-out 0.3s;
+				content: "";
+				position: absolute;
+				bottom: 2px;
+				left: 0;
+				height: 4px;
+				background-color: #ff7b29;
+				border-radius: 99px;
+			}
+			&:hover::after {
+				width: 30%;
+			}
+		}
+	}
+}
+
+footer .socials {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 16px;
+	a {
+		display: inline-block;
+		padding: 12px;
+		border-radius: 99px;
+		border: 1px solid #ccc;
+		font-size: 24px;
+		color: #ccc;
+		transition: all ease-in-out 0.3s;
+	}
+	a:hover {
+		background-color: #ccc;
+		color: #fff;
+	}
+}
+
+.menu-toggle {
+	display: none;
+	background: none;
+	border: none;
+	color: #0b1f22;
+	cursor: pointer;
+}

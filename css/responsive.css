@@ -1,0 +1,311 @@
+/* 1200 and up */
+
+@media  screen and (max-width: 1199.98px) {
+    .container {
+        width: 960px;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: #0b1f22;
+        position: absolute;
+        right: 10%;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 8px;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        z-index: 1000;
+        
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .btn-header {
+        display: none;
+    }
+
+    /*banner */
+    #banner {
+        grid-template-columns: 1fr;
+       
+        margin-top: 4rem;
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                max-width: 576px;
+            }
+            p {
+                max-width: 335px;
+            }
+            .more-info {
+                justify-content: space-between;
+            }
+        }
+        .img-content {
+            margin-top: 4rem;
+        }
+        .extra {
+            display: none;
+        }
+    }
+
+    /*Search bar*/
+    #search-bar {
+        .search-form {
+            flex-direction: column;
+            align-items: first baseline;
+        } 
+    }
+    /*Feature tour*/
+    #feature-tour {
+       margin-top: 26rem;
+       .title-feature {
+            flex-direction: column;
+            align-items: first baseline;
+            button {
+                margin-top: 3rem;
+            }
+       }
+       .tour-card {
+        justify-content: center;
+        .tour-item{
+            flex: 1 1 100%;
+            height: auto;
+        }
+       }
+    }
+    #about-us {
+        margin-top: 4rem;
+        .about-us__image {
+            display: none;
+        }
+    }
+    #trending-tour {
+        .title {
+            flex-direction: column;
+            align-items: first baseline;
+            .forward {
+                margin-top: 3rem;
+            }
+        }
+        .trending-card {
+            justify-content: center;
+        }
+        .trending-item .trending-card:not(:first-child) {
+            display: none; 
+          }
+    }
+    #destination {
+        .title {
+            flex-direction: column;
+            align-items: first baseline;
+            button {
+                margin-top: 4rem;
+            }
+        }
+        .destination-image {
+            grid-template-columns: 1fr;
+            
+        }
+    }
+    .tuor-type__item {
+        align-items: center;
+        justify-content: center;
+        gap:3rem;
+    }
+    #cta{
+        flex-direction: column;
+        gap: 24px;
+    }
+    #art-travel {
+        margin-top: 40rem;
+        flex-direction: column;
+        gap:40px;
+        .art-title::before {
+            left: 38%;
+        }
+    }
+}
+
+@media  screen and (max-width: 991.98px) {
+    .container {
+        width: 720px;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: #0b1f22;
+        position: absolute;
+        right: 10%;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 8px;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        z-index: 1000;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .btn-header {
+        display: none;
+    }
+    /*banner */
+    #banner {
+        grid-template-columns: 1fr;
+       
+        margin-top: 4rem;
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                max-width: 576px;
+            }
+            p {
+                max-width: 335px;
+            }
+            .more-info {
+                justify-content: space-between;
+            }
+        }
+        .img-content {
+            margin-top: 4rem;
+        }
+        .extra {
+            display: none;
+        }
+    }
+    
+}
+
+@media  screen and (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: #0b1f22;
+        position: absolute;
+        right: 10%;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 8px;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        z-index: 1000;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .btn-header {
+        display: none;
+    }
+    /*banner */
+    #banner {
+        grid-template-columns: 1fr;
+       
+        margin-top: 4rem;
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                max-width: 576px;
+            }
+            p {
+                max-width: 335px;
+            }
+            .more-info {
+                justify-content: space-between;
+            }
+        }
+        .img-content {
+            margin-top: 4rem;
+        }
+        .extra {
+            display: none;
+        }
+    }
+    
+}
+
+@media  screen and (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: #0b1f22;
+        position: absolute;
+        right: 10%;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 8px;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        z-index: 1000;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .btn-header {
+        display: none;
+    }
+
+   /*banner */
+   #banner {
+    grid-template-columns: 1fr;
+   
+    margin-top: 4rem;
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1{
+            max-width: 576px;
+        }
+        p {
+            max-width: 335px;
+        }
+        .more-info {
+            justify-content: space-between;
+        }
+    }
+    .img-content {
+        margin-top: 4rem;
+    }
+    .extra {
+        display: none;
+    }
+}
+}

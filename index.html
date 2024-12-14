@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Begin Header -->
+      <header class="d-flex-between">
+        <a href="#"
+          ><img src="./assets/img/logo.png" alt="Safe Tour Logo" />
+        </a>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="ri-menu-line"></i>
+        </button>
+        <nav>
+          <ul class="nav__inner nav-links d-flex-between" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="./pages/about-us.html">About</a></li>
+            <li><a href="./pages/destinations.html">Destinations</a></li>
+            <li><a href="./pages/blog.html">Blog</a></li>
+            <li><a href="./pages/tour.html">Pages</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-header">Contact us</button>
+      </header>
+      <!-- End header -->
+
+      <!-- Banner -->
+      <section class="banner" id="banner">
+        <!-- Text-content -->
+        <div class="text-content">
+          <h1>Let's Make Your Best Trip Ever</h1>
+          <p>
+            Plan and book your perfect trip with expert advice, travel tips,
+            destination information and inspiration from us.
+          </p>
+          <div class="buttons d-flex">
+            <button class="btn btn-big">Discover Now</button>
+            <div class="more-info d-flex-start">
+              <button class="circle-btn">
+                <i class="ri-arrow-right-s-fill"></i>
+              </button>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image content -->
+        <div class="img-content">
+          <img src="./assets/img/home/banner.png" alt="Travel" />
+          <div class="stats d-flex-column">
+            <div class="stat stat-1 d-flex-column">
+              <strong>39</strong>
+              <span>Trips Traveled</span>
+            </div>
+            <div class="stat stat-2 d-flex-column">
+              <strong>224</strong>
+              <span>Total Trip (Month)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra -->
+        <div class="extra d-flex-column">
+          <!-- Item-1 -->
+          <div class="extra-item d-flex">
+            <img src="./assets/img/home/year-icon.svg" alt="" />
+            <div class="extra-info">
+              <strong>12</strong>
+              <span>Years Experiences</span>
+            </div>
+          </div>
+          <!-- Item-2 -->
+          <div class="extra-item d-flex">
+            <img src="./assets/img/home/award-icon.svg" alt="" />
+            <div class="extra-info">
+              <strong>29</strong>
+              <span>Awards Gained</span>
+            </div>
+          </div>
+          <!-- Item-3 -->
+          <div class="extra-item d-flex">
+            <img src="./assets/img/home/build-icon.svg" alt="" />
+            <div class="extra-info">
+              <strong>725+</strong>
+              <span>Property Build</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search bar -->
+      <section class="search-bar d-flex-center" id="search-bar">
+        <form class="search-form" action="/search" method="GET">
+          <!-- Location -->
+          <div class="form-group">
+            <label for="location">Location</label>
+            <select id="location" name="location">
+              <option value="bali">Bali, Indonesia</option>
+              <option value="jakarta">Jakarta, Indonesia</option>
+            </select>
+          </div>
+
+          <!-- City -->
+          <div class="form-group">
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="prambanan">Prambanan</option>
+              <option value="yogyakarta">Yogyakarta</option>
+            </select>
+          </div>
+
+          <!-- Guests -->
+          <div class="form-group">
+            <label for="guests">Guest</label>
+            <select id="guests" name="guests">
+              <option value="1">1 Person</option>
+              <option value="2">2 Persons</option>
+              <option value="8">8 Persons</option>
+            </select>
+          </div>
+
+          <!-- Search Button -->
+          <button class="search-button" id="search-button">
+            <i class="ri-search-line"></i>Search
+          </button>
+        </form>
+      </section>
+
+      <!-- Feature Tour -->
+      <section class="feature-tour" id="feature-tour">
+        <div class="title-feature d-flex-between">
+          <div class="title-content">
+            <h2>Our Best Tuor</h2>
+            <p>
+              These are also locations where it’s easy to feel healthier,
+              happier and less stressed than in America. And for more
+              destinations on the Global Retirement Index.
+            </p>
+          </div>
+          <button class="btn btn-big">See all tours</button>
+        </div>
+
+        <div class="tour-card row col-3 d-flex-between col-sm-1">
+          <!-- Tuor Item -->
+          <div class="tuor-item">
+            <div class="img-container">
+              <img src="./assets/img/home/caims.png" alt="Camims Travel" />
+            </div>
+            <div class="tour-info">
+              <span class="tour-info__price">$150/day</span>
+              <h4 class="tuor-info__name">Cairns Travel</h4>
+              <span class="tuor-info__location"
+                ><i class="ri-map-pin-line"></i> Calrns QLD, Australia</span
+              >
+              <div class="tour-info__meta">
+                <div class="date">
+                  <i class="ri-calendar-check-line"></i>
+                  <span class="tour-date">Oct 28, 2021</span>
+                </div>
+                <div class="time">
+                  <i class="ri-time-line"></i>
+                  <span class="tour-time">5 Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tuor Item -->
+          <div class="tuor-item">
+            <div class="img-container">
+              <img src="./assets/img/home/orlando.png" alt="Orlando Travel" />
+            </div>
+            <div class="tour-info">
+              <span class="tour-info__price">$110/day</span>
+              <h4 class="tuor-info__name">Orlando Travel</h4>
+              <span class="tuor-info__location">
+                <i class="ri-map-pin-line"></i> Orlando, FL, USA
+              </span>
+              <div class="tour-info__meta">
+                <div class="date">
+                  <i class="ri-calendar-check-line"></i>
+                  <span class="tour-date">Jul 30,2021</span>
+                </div>
+                <div class="time">
+                  <i class="ri-time-line"></i>
+                  <span class="tour-time">3 Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tuor Item -->
+          <div class="tuor-item">
+            <div class="img-container">
+              <img src="./assets/img/home/malaysia.png" alt="Malaysia Travel" />
+            </div>
+            <div class="tour-info">
+              <span class="tour-info__price">$136/day</span>
+              <h4 class="tuor-info__name">Malaysia</h4>
+              <span class="tuor-info__location">
+                <i class="ri-map-pin-line"></i>Malaysia
+              </span>
+              <div class="tour-info__meta">
+                <div class="date">
+                  <i class="ri-calendar-check-line"></i>
+                  <span class="tour-date">Jul 29, 2021</span>
+                </div>
+                <div class="time">
+                  <i class="ri-time-line"></i>
+                  <span class="tour-time">5 Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us -->
+      <section class="about-us row col-2 d-flex-center" id="about-us">
+        <div class="about-us__image">
+          <img src="./assets/img/home/travel-photo.png" alt="Travel Image" />
+        </div>
+        <div class="about-us__content">
+          <h2>Why Choose Us?</h2>
+          <p>
+            We make all the process easy. Dummy text ever since the is, when an
+            unknown printer took.
+          </p>
+          <div class="about-us__feature">
+            <div class="info-item">
+              <img src="./assets/img/home/world.png" alt="Easy Process" />
+              <div class="info-content">
+                <h4>We make all the process easy</h4>
+                <p>
+                  A gallery of type and scrambled it to make a type when an
+                  unknown printer took.
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <img src="./assets/img/home/private.png" alt="Customized Tours" />
+              <div class="info-content">
+                <h4>Private & Customized Tours</h4>
+                <p>
+                  A gallery of type and scrambled it to make a type when an
+                  unknown printer took.
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <img src="./assets/img/home/subtract.png" alt="Passport Help" />
+              <div class="info-content">
+                <h4>Immigration & Passport Help</h4>
+                <p>
+                  A gallery of type and scrambled it to make a type when an
+                  unknown printer took.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending -->
+      <section class="trending-tour" id="trending-tour">
+        <div class="title d-flex-between">
+          <div class="title-content">
+            <h2>Trending 2022</h2>
+            <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
+          </div>
+          <div class="forward">
+            <button class="pre"><i class="ri-arrow-left-line"></i></button>
+            <button class="next"><i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+
+        <div class="trending-item row d-flex-between">
+          <!-- Item-1 -->
+          <div class="trending-card">
+            <img
+              src="./assets/img/home/moutain-hikingtour.png"
+              alt="Moutain hiking tour"
+            />
+
+            <div class="trending-info">
+              <h4>Mountain Hiking Tour</h4>
+              <div class="places-activities d-flex-start">
+                <span class="places">12 Places</span>
+                <span class="separater">|</span>
+                <span class="activities">3 Activities</span>
+              </div>
+              <div class="price-button d-flex-between">
+                <span class="price">$895.50</span>
+                <button class="book-now">Book Now</button>
+              </div>
+              <div class="agency d-flex-start">
+                <div class="logo-agency">ST</div>
+                <span class="name-agency">Safe Tour Agency</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item-2 -->
+          <div class="trending-card">
+            <img src="./assets/img/home/skyline.png" alt="Tran Skyline" />
+            <div class="trending-info">
+              <h4>Tran Skyline</h4>
+              <div class="places-activities d-flex-start">
+                <span class="places">12 Places</span>
+                <span class="separater">|</span>
+                <span class="activities">3 Activities</span>
+              </div>
+              <div class="price-button d-flex-between">
+                <span class="price">$769.99</span>
+                <button class="book-now">Book Now</button>
+              </div>
+              <div class="agency d-flex-start">
+                <div class="logo-agency">ST</div>
+                <span class="name-agency">Safe Tour Agency</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item-3 -->
+          <div class="trending-card">
+            <img src="./assets/img/home/forest.png" alt="Forest Wild Life" />
+            <div class="trending-info">
+              <h4>Forest Wild Life</h4>
+              <div class="places-activities d-flex-start">
+                <span class="places">12 Places</span>
+                <span class="separater">|</span>
+                <span class="activities">3 Activities</span>
+              </div>
+              <div class="price-button d-flex-between">
+                <span class="price">$939.80</span>
+                <button class="book-now">Book Now</button>
+              </div>
+              <div class="agency d-flex-start">
+                <div class="logo-agency">ST</div>
+                <span class="name-agency">Safe Tour Agency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destinations -->
+      <section class="destination" id="destination">
+        <div class="title d-flex-between">
+          <div class="title-content">
+            <h2>Top Destination</h2>
+            <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
+          </div>
+          <button class="btn btn-medium">See all destination</button>
+        </div>
+        <div class="destination-image">
+          <div class="first-destination">
+            <img
+              class="photo-1"
+              src="./assets/img/home/location-1.png"
+              alt=""
+            />
+            <img
+              class="photo-2"
+              src="./assets/img/home/location-2.png"
+              alt=""
+            />
+            <img
+              class="photo-3"
+              src="./assets/img/home/location-4.png"
+              alt=""
+            />
+          </div>
+          <div class="second-destination">
+            <img
+              class="photo-4"
+              src="./assets/img/home/location-3.png"
+              alt=""
+            />
+            <img
+              class="photo-5"
+              src="./assets/img/home/location-5.png"
+              alt=""
+            />
+            <img
+              class="photo-6"
+              src="./assets/img/home/location-6.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Tuor type -->
+      <section class="tour-type" id="tuor-type">
+        <div class="title-type">
+          <h2>Tuor Type</h2>
+        </div>
+        <div class="tuor-type__item d-flex-between row col-4">
+          <div class="type-item">
+            <img
+              style="margin-bottom: 0"
+              src="./assets/img/home/location.svg"
+              alt="City tour"
+            />
+            <h4>City tours</h4>
+            <span>5 tour- from <b>550$</b></span>
+          </div>
+          <div class="type-item">
+            <img src="./assets/img/home/beaches.svg" alt="beaches" />
+            <h4>Beaches</h4>
+            <span>10 tour- from <b>250$</b></span>
+          </div>
+          <div class="type-item">
+            <img src="./assets/img/home/museam.svg" alt="Museum" />
+            <h4>Museum Tours</h4>
+            <span>5 tour- from <b>399$</b></span>
+          </div>
+          <div class="type-item">
+            <img src="./assets/img/home/cruises.svg" alt="Cruises" />
+            <h4>Cruises</h4>
+            <span>8 tour- from <b>850$</b></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Citation -->
+      <section class="cta d-flex-start" id="cta">
+        <div class="cta-img">
+          <img src="./assets/img/home/cta-img.png" alt="Girl" />
+        </div>
+        <div class="cta-content">
+          <h2>What our user say</h2>
+          <blockquote class="quote">
+            “Adding live social proof was the #1 driver of increased revenue in
+            all my experiments while at Airkey.” and the bran must survive
+            atleast 1 year.
+          </blockquote>
+          <div class="users d-flex-start">
+            <div class="users-img">
+              <img src="./assets/img/home/raul-van.png" alt="Raul van" />
+            </div>
+            <div class="users-info">
+              <span class="user-name">Raul van Sutoyo</span>
+              <span class="user-job">UI Designer</span>
+              <span class="star">★ ★ ★ ★ ★ </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles -->
+      <section class="art-tralvel" id="art-travel">
+        <div class="art-title">
+          <h2>Articles & Travel Guidings</h2>
+          <p>
+            Travel has helped us to understand the meaning of life and it has
+            helped us become better people. Each time we travel, we see the
+            world with new eyes.
+          </p>
+        </div>
+        <div class="art-content row col-2">
+          <div class="main-art">
+            <img src="./assets/img/home/air-ballon.png" alt=" Air Ballon" />
+            <div class="main-art__title">
+              <h3>The real voyage does not consist in seeking new</h3>
+              <span>Jun 1, 2021</span>
+            </div>
+            <p>
+              Excited him now natural saw passage offices you minuter. At by
+              asked being court hopes.
+            </p>
+          </div>
+
+          <div class="extra-art d-flex-between row">
+            <div class="extra-item">
+              <img src="./assets/img/home/mountain.png" alt="Mountain" />
+              <div class="extra-content">
+                <h3>Mountains is always right destination.</h3>
+                <p>Farther so friends am to detract forbade</p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </div>
+
+            <div class="extra-item d-flex-between">
+              <img src="./assets/img/home/night.png" alt="night sky" />
+              <div class="extra-content">
+                <h3>Here Our's Life is either a daring adventure.</h3>
+                <p>One of the programs is Save Our I have personally.</p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </div>
+
+            <div class="extra-item">
+              <img src="./assets/img/home/venture.png" alt="Venture" />
+              <div class="extra-content">
+                <h3>Here Our's Life is either a daring adventure.</h3>
+                <p>life is either a daring adventure or it's nothing</p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscribe -->
+      <section class="subcrise" id="subcirse">
+        <div class="triangle"></div>
+        <h2>Subscribe our newsletter</h2>
+        <p>Reciev latest news, update, and many other things every week.</p>
+        <input type="email" placeholder="Enter Your email address" />
+        <button><img src="./assets/img/home/input-icon.svg" alt="" /></button>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer__top">
+          <div class="footer__item">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Guide Book</a></li>
+              <li><a href="#">App Directory</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h5>Travellers</h5>
+            <ul>
+              <li><a href="#">Why Travellers</a></li>
+              <li><a href="#">Enterprice</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Instagram post</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">Travelling</a></li>
+              <li><a href="#">About Locato</a></li>
+              <li><a href="#">Success</a></li>
+              <li><a href="#">Information</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h5>Get in Touch</h5>
+            <p>Feel free to get in touch with us vai email</p>
+            <a class="mailto" href="maito:email@gmail.com">email@gmail.com</a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_bottom d-flex-between">
+          <a href="#" class="logo-bottom"
+            ><img src="./assets/imgs/logo.png" alt=""
+          /></a>
+          <nav class="nav-bottom">
+            <ul class="nav__inner d-flex-between">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pages</a></li>
+            </ul>
+          </nav>
+          <div class="socials">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+#banner {
+	background-image: url("../assets/img/tour/banner.png");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	h1 {
+		text-align: center;
+		padding: 140px 0;
+		font-size: 62px;
+		font-family: "Poppins", serif;
+		color: #2d3134;
+		font-weight: 700;
+	}
+}
+#search-bar {
+    margin: 100px auto;
+    .search-form {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+        width: 749px;
+        height: 114px;
+        row-gap: 32px;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            label {
+                font-family: "Inter", sans-serif;
+                font-size: 1.6rem;
+                line-height: 16px;
+                font-weight: 600;
+                color: #0a192d;
+                cursor: pointer;
+            }
+            select {
+                outline: none;
+                border: none;
+                font-family: "Inter", sans-serif;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                color: #697280;
+                padding: 0;
+                cursor: pointer;
+                &:active{
+                    outline: none;
+                }   
+            }
+        }
+        .search-button {
+            width: 170px;
+            height: 64px;
+            background-color: #132742;
+            border-radius: 8px;
+            color: #fff;
+            font-family: "Inter",sans-serif;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 16px;
+            letter-spacing: -0.02em;
+            padding: 24px 40px;
+            transition: opacity 0.5 ease-in-out;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+            i {
+                margin-right: 12px;
+            }
+        } 
+    }
+}
+
+#tour-card {
+    gap:40px;
+    .tour-item {
+        width: 565px;
+        height: 593px;
+        background-color: #ececec;
+        border-radius: 10px;
+        img {
+            width: 100%;
+            height: 473px;
+        }
+        .tour-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:30px;
+            .price-day{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                .day {
+                    font-family: "Inter",sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 26px;
+                    color: #676a6c;
+                }
+                .price {
+                    font-family: Inter;
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    line-height: 32px;
+                    text-align: right;
+                    color: #2d3134;
+
+                }
+            }
+        }
+    }
+}
