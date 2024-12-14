@@ -100,9 +100,7 @@
         .trending-card {
             justify-content: center;
         }
-        .trending-item .trending-card:not(:first-child) {
-            display: none; 
-          }
+        
     }
     #destination {
         .title {
@@ -307,5 +305,8 @@
     .extra {
         display: none;
     }
+    .trending-item .trending-card:not(:first-child) {
+        display: none; 
+      }
 }
 }
