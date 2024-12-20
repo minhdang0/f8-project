@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-    <!-- fonts -->
+    <link rel="icon" href="../assets/img/blogger-fill.svg" type="image/svg+xml" />
+    <title>Blog</title>
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,16 +38,19 @@
   <body>
     <div class="container">
       <!-- Begin Header -->
-      <header class="d-flex-between">
+      <header class="d-flex-between" id="header">
         <a href="#"
           ><img src="../assets/img/logo.png" alt="Safe Tour Logo" />
         </a>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="ri-menu-line"></i>
+        </button>
         <nav>
           <ul class="nav__inner d-flex-between">
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about-us.html">About</a></li>
             <li><a href="./destinations.html">Destinations</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#" id="active">Blog</a></li>
             <li><a href="./tour.html">Pages</a></li>
           </ul>
         </nav>
@@ -260,7 +264,7 @@
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Destinations</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#" id="active">Blog</a></li>
               <li><a href="#">Pages</a></li>
             </ul>
           </nav>
@@ -272,11 +276,6 @@
         </div>
       </footer>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

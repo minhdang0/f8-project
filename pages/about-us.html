@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../assets/img/user-community-fill.svg"
+      type="image/svg+xml"
+    />
     <title>About us</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,6 +39,12 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/about-us.css" />
     <link rel="stylesheet" href="../css/grid.css" />
+
+    <!-- Aos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
     <div class="background-top" id="background-top">
@@ -44,14 +55,17 @@
     </div>
     <div class="container">
       <!-- Begin Header -->
-      <header class="d-flex-between">
+      <header class="d-flex-between" id="header">
         <a href="#"
           ><img src="../assets/img/logo.png" alt="Safe Tour Logo" />
         </a>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="ri-menu-line"></i>
+        </button>
         <nav>
           <ul class="nav__inner d-flex-between">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" id="active">About</a></li>
             <li><a href="./destinations.html">Destinations</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./tour.html">Pages</a></li>
@@ -139,15 +153,21 @@
         </div>
       </section>
 
-      <!--Begin Tuor guide -->
+      <!-- Begin Tour Guide -->
       <section class="tuor-guide" id="tour-guide">
         <h2>Meet our tour guides</h2>
         <div class="guide-card row col-3">
           <div class="guide-item">
-            <img src="../assets/img/about-us/hasan.png" alt="Hasan Ahmed" />
+            <div class="img-container">
+              <a href="#">
+                <img src="../assets/img/about-us/hasan.png" alt="Hasan Ahmed" />
+              </a>
+            </div>
             <div class="guide-item__info">
               <div class="personal-info">
-                <span class="guide-name">Hasan Ahmed</span>
+                <a href="#">
+                  <span class="guide-name">Hasan Ahmed</span>
+                </a>
                 <span class="guide-pos">Adventure master</span>
               </div>
               <div class="social-info">
@@ -159,10 +179,19 @@
           </div>
 
           <div class="guide-item">
-            <img src="../assets/img/about-us/mosqur.png" alt="Mosqur Alam" />
+            <div class="img-container">
+              <a href="#">
+                <img
+                  src="../assets/img/about-us/mosqur.png"
+                  alt="Mosqur Alam"
+                />
+              </a>
+            </div>
             <div class="guide-item__info">
               <div class="personal-info">
-                <span class="guide-name">Mosqur Alam</span>
+                <a href="#">
+                  <span class="guide-name">Mosqur Alam</span>
+                </a>
                 <span class="guide-pos">Adventure master</span>
               </div>
               <div class="social-info">
@@ -174,10 +203,19 @@
           </div>
 
           <div class="guide-item">
-            <img src="../assets/img/about-us/foysal.png" alt="Foysal Khan" />
+            <div class="img-container">
+              <a href="#">
+                <img
+                  src="../assets/img/about-us/foysal.png"
+                  alt="Foysal Khan"
+                />
+              </a>
+            </div>
             <div class="guide-item__info">
               <div class="personal-info">
-                <span class="guide-name">Foysal Khan</span>
+                <a href="#">
+                  <span class="guide-name">Foysal Khan</span>
+                </a>
                 <span class="guide-pos">Adventure master</span>
               </div>
               <div class="social-info">
@@ -189,6 +227,7 @@
           </div>
         </div>
       </section>
+
       <!-- End tour guide -->
 
       <!--Begin Subscribe -->
@@ -247,7 +286,7 @@
           <nav class="nav-bottom">
             <ul class="nav__inner d-flex-between">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="#" id="active">About</a></li>
               <li><a href="#">Destinations</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Pages</a></li>
@@ -261,5 +300,7 @@
         </div>
       </footer>
     </div>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </body>
 </html>

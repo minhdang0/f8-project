@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/home.svg" type="image/svg+xml" />
     <title>Home</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,11 +36,17 @@
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/grid.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- aos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
     <div class="container">
       <!-- Begin Header -->
-      <header class="d-flex-between">
+      <header id="header">
         <a href="#"
           ><img src="./assets/img/logo.png" alt="Safe Tour Logo" />
         </a>
@@ -48,7 +55,7 @@
         </button>
         <nav>
           <ul class="nav__inner nav-links d-flex-between" id="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#" id="active">Home</a></li>
             <li><a href="./pages/about-us.html">About</a></li>
             <li><a href="./pages/destinations.html">Destinations</a></li>
             <li><a href="./pages/blog.html">Blog</a></li>
@@ -71,6 +78,7 @@
           <div class="buttons d-flex">
             <button class="btn btn-big">Discover Now</button>
             <div class="more-info d-flex-start">
+              <img src="./assets/img/home/circle-2.png" alt="" />
               <button class="circle-btn">
                 <i class="ri-arrow-right-s-fill"></i>
               </button>
@@ -84,6 +92,7 @@
           <img src="./assets/img/home/banner.png" alt="Travel" />
           <div class="stats d-flex-column">
             <div class="stat stat-1 d-flex-column">
+              <img src="./assets/img/home/circle.png" alt="" />
               <strong>39</strong>
               <span>Trips Traveled</span>
             </div>
@@ -165,7 +174,7 @@
       <section class="feature-tour" id="feature-tour">
         <div class="title-feature d-flex-between">
           <div class="title-content">
-            <h2>Our Best Tuor</h2>
+            <h2>Our Best Tour</h2>
             <p>
               These are also locations where it’s easy to feel healthier,
               happier and less stressed than in America. And for more
@@ -179,7 +188,9 @@
           <!-- Tuor Item -->
           <div class="tuor-item">
             <div class="img-container">
-              <img src="./assets/img/home/Caims.png" alt="Camims Travel" />
+              <a href="#">
+                <img src="./assets/img/home/Caims.png" alt="Camims Travel" />
+              </a>
             </div>
             <div class="tour-info">
               <span class="tour-info__price">$150/day</span>
@@ -202,11 +213,13 @@
           <!-- Tuor Item -->
           <div class="tuor-item">
             <div class="img-container">
-              <img src="./assets/img/home/orlando.png" alt="Orlando Travel" />
+              <a href="#"
+                ><img src="./assets/img/home/orlando.png" alt="Orlando Travel"
+              /></a>
             </div>
             <div class="tour-info">
               <span class="tour-info__price">$110/day</span>
-              <h4 class="tuor-info__name">Orlando Travel</h4>
+              <a href=""><h4 class="tuor-info__name">Orlando Travel</h4></a>
               <span class="tuor-info__location">
                 <i class="ri-map-pin-line"></i> Orlando, FL, USA
               </span>
@@ -226,11 +239,15 @@
           <!-- Tuor Item -->
           <div class="tuor-item">
             <div class="img-container">
-              <img src="./assets/img/home/malaysia.png" alt="Malaysia Travel" />
+              <a href="#"
+                ><img
+                  src="./assets/img/home/malaysia.png"
+                  alt="Malaysia Travel"
+              /></a>
             </div>
             <div class="tour-info">
               <span class="tour-info__price">$136/day</span>
-              <h4 class="tuor-info__name">Malaysia</h4>
+              <a href="#"><h4 class="tuor-info__name">Malaysia</h4> </a>
               <span class="tuor-info__location">
                 <i class="ri-map-pin-line"></i>Malaysia
               </span>
@@ -312,13 +329,13 @@
         <div class="trending-item row d-flex-between">
           <!-- Item-1 -->
           <div class="trending-card">
-            <img
-              src="./assets/img/home/moutain-hikingtour.png"
-              alt="Moutain hiking tour"
-            />
-
+            <a href="#"
+              ><img
+                src="./assets/img/home/moutain-hikingtour.png"
+                alt="Moutain hiking tour"
+            /></a>
             <div class="trending-info">
-              <h4>Mountain Hiking Tour</h4>
+              <a href="#"><h4>Mountain Hiking Tour</h4></a>
               <div class="places-activities d-flex-start">
                 <span class="places">12 Places</span>
                 <span class="separater">|</span>
@@ -337,9 +354,11 @@
 
           <!-- Item-2 -->
           <div class="trending-card">
-            <img src="./assets/img/home/skyline.png" alt="Tran Skyline" />
+            <a href="#"
+              ><img src="./assets/img/home/skyline.png" alt="Tran Skyline"
+            /></a>
             <div class="trending-info">
-              <h4>Tran Skyline</h4>
+              <a href="#"><h4>Tran Skyline</h4></a>
               <div class="places-activities d-flex-start">
                 <span class="places">12 Places</span>
                 <span class="separater">|</span>
@@ -358,9 +377,11 @@
 
           <!-- Item-3 -->
           <div class="trending-card">
-            <img src="./assets/img/home/forest.png" alt="Forest Wild Life" />
+            <a href="#"
+              ><img src="./assets/img/home/forest.png" alt="Forest Wild Life"
+            /></a>
             <div class="trending-info">
-              <h4>Forest Wild Life</h4>
+              <a href="#"><h4>Forest Wild Life</h4></a>
               <div class="places-activities d-flex-start">
                 <span class="places">12 Places</span>
                 <span class="separater">|</span>
@@ -429,31 +450,38 @@
       <!-- Tuor type -->
       <section class="tour-type" id="tuor-type">
         <div class="title-type">
-          <h2>Tuor Type</h2>
+          <h2>Tour Type</h2>
         </div>
         <div class="tuor-type__item d-flex-between row col-4">
           <div class="type-item">
-            <img
-              style="margin-bottom: 0"
-              src="./assets/img/home/location.svg"
-              alt="City tour"
-            />
-            <h4>City tours</h4>
+            <a href="#"
+              ><img
+                style="margin-bottom: 0"
+                src="./assets/img/home/location.svg"
+                alt="City tour"
+            /></a>
+            <a href="#"><h4>City tours</h4></a>
             <span>5 tour- from <b>550$</b></span>
           </div>
           <div class="type-item">
-            <img src="./assets/img/home/beaches.svg" alt="beaches" />
-            <h4>Beaches</h4>
+            <a href="#"
+              ><img src="./assets/img/home/beaches.svg" alt="beaches"
+            /></a>
+            <a href="#"><h4>Beaches</h4></a>
             <span>10 tour- from <b>250$</b></span>
           </div>
           <div class="type-item">
-            <img src="./assets/img/home/museam.svg" alt="Museum" />
-            <h4>Museum Tours</h4>
+            <a href="#"
+              ><img src="./assets/img/home/museam.svg" alt="Museum"
+            /></a>
+            <a href="#"><h4>Museum Tours</h4></a>
             <span>5 tour- from <b>399$</b></span>
           </div>
           <div class="type-item">
-            <img src="./assets/img/home/cruises.svg" alt="Cruises" />
-            <h4>Cruises</h4>
+            <a href="#"
+              ><img src="./assets/img/home/cruises.svg" alt="Cruises"
+            /></a>
+            <a href="#"><h4>Cruises</h4></a>
             <span>8 tour- from <b>850$</b></span>
           </div>
         </div>
@@ -496,9 +524,13 @@
         </div>
         <div class="art-content row col-2">
           <div class="main-art">
-            <img src="./assets/img/home/air-ballon.png" alt=" Air Ballon" />
+            <a href="#"
+              ><img src="./assets/img/home/air-ballon.png" alt=" Air Ballon"
+            /></a>
             <div class="main-art__title">
-              <h3>The real voyage does not consist in seeking new</h3>
+              <a href="#"
+                ><h3>The real voyage does not consist in seeking new</h3></a
+              >
               <span>Jun 1, 2021</span>
             </div>
             <p>
@@ -509,27 +541,39 @@
 
           <div class="extra-art d-flex-between row">
             <div class="extra-item">
-              <img src="./assets/img/home/mountain.png" alt="Mountain" />
+              <a href="#"
+                ><img src="./assets/img/home/mountain.png" alt="Mountain"
+              /></a>
               <div class="extra-content">
-                <h3>Mountains is always right destination.</h3>
+                <a href="#" id=""
+                  ><h3>Mountains is always right destination.</h3></a
+                >
                 <p>Farther so friends am to detract forbade</p>
                 <span>Jun 1, 2021</span>
               </div>
             </div>
 
             <div class="extra-item d-flex-between">
-              <img src="./assets/img/home/night.png" alt="night sky" />
+              <a href="#"
+                ><img src="./assets/img/home/night.png" alt="night sky"
+              /></a>
               <div class="extra-content">
-                <h3>Here Our's Life is either a daring adventure.</h3>
+                <a href="#"
+                  ><h3>Here Our's Life is either a daring adventure.</h3></a
+                >
                 <p>One of the programs is Save Our I have personally.</p>
                 <span>Jun 1, 2021</span>
               </div>
             </div>
 
             <div class="extra-item">
-              <img src="./assets/img/home/venture.png" alt="Venture" />
+              <a href="#"
+                ><img src="./assets/img/home/venture.png" alt="Venture"
+              /></a>
               <div class="extra-content">
-                <h3>Here Our's Life is either a daring adventure.</h3>
+                <a href="#"
+                  ><h3>Here Our's Life is either a daring adventure.</h3></a
+                >
                 <p>life is either a daring adventure or it's nothing</p>
                 <span>Jun 1, 2021</span>
               </div>
@@ -593,11 +637,11 @@
           /></a>
           <nav class="nav-bottom">
             <ul class="nav__inner d-flex-between">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Destinations</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Pages</a></li>
+              <li><a href="#" id="active">Home</a></li>
+              <li><a href="./pages/about-us.html">About</a></li>
+              <li><a href="./pages/destinations.html">Destinations</a></li>
+              <li><a href="./pages/blog.html">Blog</a></li>
+              <li><a href="./pages/tour.html">Pages</a></li>
             </ul>
           </nav>
           <div class="socials">
@@ -609,5 +653,6 @@
       </footer>
     </div>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </body>
 </html>
